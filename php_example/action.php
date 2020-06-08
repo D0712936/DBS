@@ -14,6 +14,7 @@
 		$result = mysqli_query($conn, $sql) or die('MySQL query error');
 		while($row = mysqli_fetch_array($result)){
 			echo $row['Pid']."<p>";
+			echo $row['Ploc']."<p>";
 		}
 	}
 ?>
